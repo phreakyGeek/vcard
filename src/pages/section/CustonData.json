@@ -1,0 +1,80 @@
+{
+    "firstName": "mridulS   ",
+    "lastName": "Zinkevych",
+    
+    "profession": [
+        "doctor",
+        "professor",
+        "gynecologist"
+    ],
+
+    "profilePicture": "images/profile.jpg",
+    "resume": "Resume",
+    "about": "About",
+    "me":"Me",
+    "profileName": "My Profile",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "profileText": "I'm a Doctor with 7 years experience Lorem ipsum dolor sit amet eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen",
+    "dob": "21 june 1990",
+    "job": "Doctor",
+    "nationality": "Ukrainian",
+    "freelance": "Available",
+    "phone": "+34 21 18 40 10",
+    "residence": "Kyiv, Ukrain",
+    "email": "you@yourwebsite.com",
+    "spokenLanguages": ["French","German"],
+    "skypeName": "erik.zinkevych",
+    "whatsappNo": "+216 21 184 010",
+    "experiences": {
+        "0" : {
+                "type": "FAMILY DOCTOR",
+                "value": "KYIV HOSPITAL",
+                "from": "2015",
+                "to": "2018",
+                "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper"
+              },
+        "1" : {
+               "type": "Attending Doctor",
+               "value": "Happiness Clinic",
+               "from": "2011",
+               "to": "2015",
+               "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper"
+              },   
+        "2" : {
+               "type": "Resident Doctor",
+               "value": "Shakhtar Hospital",
+               "from": "2011",
+               "to": "2015",
+               "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper"
+              }    
+    },
+    "edu": {
+              "0" : {
+                "type": "Medecine Diploma",
+                "value": "BRITISH SCHOOL OF MEDECINE",
+                "from": "2015",
+                "to": "2018",
+                "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper"
+              },
+              "1" : {
+                "type": "Internal Medicine Residency",
+                "value": "Paris University",
+                "from": "2011",
+                "to": "2015",
+                "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper"
+              },
+              "2" : {
+                "type": "Bachelor Degree",
+                "value": "Berlin Higher Institute",
+                "from": "2007",
+                "to": "2011",
+                "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper"
+              }
+
+    }
+        
+    
+}
+  
