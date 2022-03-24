@@ -180,8 +180,13 @@ export default function AboutSection() {
                                 <div className="resume-content">
                                   <h6 className="uppercase">{currentItem.name}</h6>
                                   <p>
+                                  <i className="fa fa-star" />
+                                  <i className="fa fa-star" />
+                                  <i className="fa fa-star" />
+                                  <i className="fa fa-star" />
+                                  <i className="fa fa-star" />
                                     {
-                                      currentItem.fullStar
+                                      // currentItem.fullStar
                                       // currentItem.map((item, index)=>{
                                       //   console.log(item)
                                       //   console.log(index)
