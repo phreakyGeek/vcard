@@ -1,8 +1,8 @@
-import React from 'react'
-import c from './CustonData.json'
+import React, { Fragment } from 'react'
+// import { useState,useEffect } from 'react';
+import c from './CustomData.json'
 export default function AboutSection() {
-  let a=5;
-  console.log()
+ 
   return (
     <> {/* About Section Starts */}
     <section className="about-me" id="about">
@@ -84,7 +84,7 @@ export default function AboutSection() {
                         </ul>
                       </div>
                       <div className="col-xs-12 buttons">
-                        <a href="#" className="btn btn-primary">
+                        <a href="/#" className="btn btn-primary">
                           <i className="fa fa-file-pdf-o" /> Download my Resume 
                         </a>
                         <a target="_blank" href="blog.html" className="btn btn-primary secondary">
@@ -105,30 +105,24 @@ export default function AboutSection() {
                   {/* Experience Header Title Ends */}
                   {/* Experience Content Starts */}
                   <div className="resume-card-body experience">
+                    
                     <div className="resume-card-body-container second-font">
-                      {/* Single Experience Starts */}
-                      <div className="resume-content">
-                        <h6 className="uppercase"><span>{c.experiences[0]["type"]} - </span>{c.experiences[0]["value"]}</h6>
-                        <span className="date"><i className="fa fa-calendar-o" /> {c.experiences[0]["from"]} - {c.experiences[0]["to"]}</span>
-                        <p className="second-font">{c.experiences[0]["details"]}</p>
-                      </div>
-                      {/* Single Experience Ends */}
-                      <span className="separator" />
-                      {/* Single Experience Starts */}
-                      <div className="resume-content">
-                        <h6 className="uppercase"><span>{c.experiences[1]["type"]} - </span>{c.experiences[1]["value"]}</h6>
-                        <span className="date"><i className="fa fa-calendar-o" /> {c.experiences[1]["from"]} - {c.experiences[1]["to"]}</span>
-                        <p className="second-font">{c.experiences[1]["details"]}</p>
-                      </div>
-                      {/* Single Experience Ends */}
-                      <span className="separator" />
-                      {/* Single Experience Starts */}
-                      <div className="resume-content">
-                        <h6 className="uppercase"><span>{c.experiences[2]["type"]} - </span>{c.experiences[2]["value"]}</h6>
-                        <span className="date"><i className="fa fa-calendar-o" /> {c.experiences[2]["from"]} - {c.experiences[2]["to"]}</span>
-                        <p className="second-font">{c.experiences[2]["details"]}</p>
-                      </div>
-                      {/* Single Experience Ends */}
+                      {
+                      Object.values(c.experiences).map((item, index)=>{
+                        return (
+                        <Fragment key={"res"+index}>
+                          {/* Single Experience Starts */}
+                          <div className="resume-content">
+                          <h6 className="uppercase"><span>{item.type} - </span>{item.value}</h6>
+                          <span className="date"><i className="fa fa-calendar-o" /> {item.from} - {item.to}</span>
+                          <p className="second-font">{item.details}</p>
+                          </div>
+                          {/* Single Experience Ends */}
+                          <span className="separator" />
+                        </Fragment>)
+                      })
+                      }
+                      
                     </div>
                   </div>
                   {/* Experience Content Starts */}
@@ -143,29 +137,23 @@ export default function AboutSection() {
                   {/* Experience Header Title Ends */}
                   <div className="resume-card-body education">
                     <div className="resume-card-body-container second-font">
-                      {/* Single Education Starts */}
-                      <div className="resume-content">
-                        <h6 className="uppercase"><span>{c.edu[0]["type"]} - </span>{c.edu[0]["value"]}</h6>
-                        <span className="date"><i className="fa fa-calendar-o" /> {c.edu[0]["from"]} - {c.edu[0]["to"]}</span>
-                        <p className="second-font">{c.edu[0]["details"]}</p>
-                      </div>
-                      {/* Single Education Ends */}
-                      <span className="separator" />
-                      {/* Single Education Starts */}
-                      <div className="resume-content">
-                        <h6 className="uppercase"><span>{c.edu[1]["type"]} - </span>{c.edu[1]["value"]}</h6>
-                        <span className="date"><i className="fa fa-calendar-o" /> {c.edu[1]["from"]} - {c.edu[1]["to"]}</span>
-                        <p className="second-font">{c.edu[1]["details"]}</p>
-                      </div>
-                      {/* Single Education Ends */}
-                      <span className="separator" />
-                      {/* Single Education Starts */}
-                      <div className="resume-content">
-                        <h6 className="uppercase"><span>{c.edu[2]["type"]} - </span>{c.edu[2]["value"]}</h6>
-                        <span className="date"><i className="fa fa-calendar-o" /> {c.edu[2]["from"]} - {c.edu[2]["to"]}</span>
-                        <p className="second-font">{c.edu[2]["details"]}</p>
-                      </div>
-                      {/* Single Education Ends */}
+                      {
+                        Object.values(c.edu).map((currentItem, index)=>{
+                          return (
+                            <Fragment key={'res'+index}>
+                          {/* Single Education Starts */}
+                          <div className="resume-content">
+                            <h6 className="uppercase"><span>{currentItem.type} - </span>{currentItem.value}</h6>
+                            <span className="date"><i className="fa fa-calendar-o" /> {currentItem.from} - {currentItem.to}</span>
+                            <p className="second-font">{currentItem.details}</p>
+                          </div>
+                          {/* Single Education Ends */}
+                          <span className="separator" />
+                        </Fragment>
+                        )    
+                        })
+                      }
+                      
                     </div>
                   </div>
                 </div>
@@ -181,37 +169,34 @@ export default function AboutSection() {
                     <div className="resume-card-body-container second-font">
                       <div className="row">
                         {/* Skills Row Starts */}
+                        
                         <div className="col-xs-6">
-                          {/* Single Skills Starts */}
-                          <div className="resume-content">
-                            <h6 className="uppercase">Skill 1</h6>
-                            <p><i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /></p>
-                          </div>
-                          {/* Single Skills Ends */}
-                          {/* Single Skills Starts */}
-                          <div className="resume-content">
-                            <h6 className="uppercase">Skill 2</h6>
-                            <p><i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star-half-empty" /></p>
-                          </div>
-                          {/* Single Skills Ends */}
-                          {/* Single Skills Starts */}
-                          <div className="resume-content">
-                            <h6 className="uppercase">Skill 3</h6>
-                            <p><i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star-half-empty" /></p>
-                          </div>
-                          {/* Single Skills Ends */}
-                          {/* Single Skills Starts */}
-                          <div className="resume-content">
-                            <h6 className="uppercase">Skill 4</h6>
-                            <p><i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star-o" /> <i className="fa fa-star-o" /></p>
-                          </div>
-                          {/* Single Skills Ends */}
-                          {/* Single Skills Starts */}
-                          <div className="resume-content">
-                            <h6 className="uppercase">Skill 5</h6>
-                            <p><i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /></p>
-                          </div>
-                          {/* Single Skills Ends */}
+
+                        {
+                          Object.values(c.skill.row0).map((currentItem, index)=>{
+                            return(
+                              <Fragment key={'skill'+index}>
+                                {/* Single Skills Starts */}
+                                <div className="resume-content">
+                                  <h6 className="uppercase">{currentItem.name}</h6>
+                                  <p>
+                                    {
+                                      currentItem.fullStar
+                                      // currentItem.map((item, index)=>{
+                                      //   console.log(item)
+                                      //   console.log(index)
+                                      // })
+                                      // Object.values(currentItem.fullStar).Arrayof(currentItem.fullStar)
+                                      // console.log(Object.values(currentItem.fullStar).Arrayof(currentItem.fullStar))
+                                    }
+                                    </p>
+                                </div>
+                                {/* Single Skills Ends */}
+                              </Fragment>
+                            )
+                          })
+                        }
+                          
                         </div>
                         {/* Skills Row Ends */}
                         {/* Skills Row Starts */}

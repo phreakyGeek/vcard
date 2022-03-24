@@ -61,7 +61,7 @@ export default function Contact() {
                         <i className="fa fa-home big-icon" />
                         <div className="contact-info-box-content">
                           <h4>Residence</h4>
-                          <p className="second-font">123 Disney Street Slim Av. Brooklyn Bridge, NY, New York</p>
+                          <p className="second-font">140, 4th Main, Rajaji Nagar Industrial Town, Bengaluru - 560044</p>
                         </div>
                       </div>
                       {/* Contact Info Box Ends */}

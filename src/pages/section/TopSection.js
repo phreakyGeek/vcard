@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomData from './CustonData.json'
+import CustomData from './CustomData.json'
 
 export default function TopSection() {
   let fullName = CustomData.firstName + " " + CustomData.lastName;
@@ -15,13 +15,15 @@ export default function TopSection() {
            <div>
              {/* Text Rotator Starts */}
              <div className="selector uppercase text-center text-rotator" id="selector">
-               <h6 className="text-uppercase">Hi There ! I'm</h6>
+               <h6  className="text-uppercase">Hi There ! I'm</h6>
                <h3 className="ah-headline text-uppercase">
                  <span className="ah-words-wrapper">
+                   {/* <b className="is-visible">{fullName}</b> */}
                    <b className="is-visible">{fullName}</b>
-                   <b>a {CustomData.profession[0]}</b>
+
+                   {/* <b>a {CustomData.profession[0]}</b>
                    <b>a {CustomData.profession[1]}</b>
-                   <b>a {CustomData.profession[2]}</b>
+                   <b>a {CustomData.profession[2]}</b> */}
                  </span>
                </h3>
                {/* Social Media Icons */}

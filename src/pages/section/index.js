@@ -9,11 +9,10 @@ import Portfolio from './Portfolio';
 import Testimonials from './Testimonials';
 import TopSection from './TopSection';
 
-import CustomData from './CustonData.json'
+import CustomData from './CustomData.json'
 
 export default function index() {
     console.log("3")
-    console.log(CustomData.name)
 
     return (
         <>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import c from './CustomData.json'
 export default function Badges() {
   return (
     <>
@@ -11,27 +11,27 @@ export default function Badges() {
           <div className="col-md-4 col-sm-4 badge-item">
             <h3>
               <i className="fa fa-heartbeat" />
-              <span>87+</span>
+              <span>{c.badges[0]['value']}</span>
             </h3>
-            <h4>successful operations</h4>
+            <h4>{c.badges[0]['name']}</h4>
           </div>
           {/* Fact Badge Item Ends */}
           {/* Fact Badge Item Starts */}
           <div className="col-md-4 col-sm-4 badge-item">
             <h3>
               <i className="fa fa-stethoscope" />
-              <span>99+</span>
+              <span>{c.badges[1]['value']}</span>
             </h3>
-            <h4>consultations</h4>
+            <h4>{c.badges[1]['name']}</h4>
           </div>
           {/* Fact Badge Item Ends */}
           {/* Fact Badge Item Starts */}
           <div className="col-md-4 col-sm-4 badge-item">
             <h3>
               <i className="fa fa-heart" />
-              <span>78+</span>
+              <span>{c.badges[2]['value']}</span>
             </h3>
-            <h4>saved lifes</h4>
+            <h4>{c.badges[2]['name']}</h4>
           </div>
           {/* Fact Badge Item Ends */}
         </div>
