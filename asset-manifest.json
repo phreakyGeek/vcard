@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/vcard/static/js/main.9b29b49e.js",
+    "index.html": "/vcard/index.html",
+    "main.9b29b49e.js.map": "/vcard/static/js/main.9b29b49e.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9b29b49e.js"
+  ]
+}
